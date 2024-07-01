@@ -1,5 +1,6 @@
 ﻿import QtQuick 2.3
 import QtQuick.Controls
+import xmleditor
 
 ApplicationWindow {
 	visible: true
@@ -7,9 +8,8 @@ ApplicationWindow {
 	height: 480
 	title: qsTr("XML Editor")
 
-	Rectangle {
-		width: 100
-		height: 100
-		color: "red"
-	}
+	menuBar: MyMenuBar{}
+	
+	XmlView{}
+	
 }

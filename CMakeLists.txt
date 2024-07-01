@@ -21,12 +21,15 @@ qt_add_qml_module(
 	URI "xmleditor"
 	VERSION "1.0"
 	QML_FILES 
-		src/qml/mainwindow.qml
+		src/qml/MainWindow.qml
+		src/qml/MyMenuBar.qml
+		src/qml/XmlView.qml
 )
 
 target_sources(xml_editor PRIVATE
 	src/main.cpp
-	src/qml/mainwindow.qml
+	src/XmlModel.h
+	src/XmlModel.cpp
 )
 
 set_target_properties(xml_editor PROPERTIES 
